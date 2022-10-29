@@ -1,0 +1,122 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+    background: #6E4555
+}
+
+@font-face {
+    font-family: 'geekabyte2';
+    src: url('geekabyte2.ttf');
+}
+
+@font-face {
+    font-family: 'digital-7';
+    src: url('digital-7.ttf')
+}
+h1 {
+    font-family: 'geekabyte2';
+    font-size: 64px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    color: #F5E3E0;
+    text-shadow: -1px -1px 0 #3A3238, 1px -1px 0 #3A3238, -1px 1px 0 #3A3238, 1px 1px 0 #3A3238;
+}
+
+.calculator {
+    height: 625px;
+    width: 500px;
+    border: 3px solid #3A3238;
+    border-radius: 40px;
+    background: #D282A6;
+}
+
+.display {
+    height: 20%;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    border-bottom: 3px solid black;
+    margin-bottom: 10px;
+    background: #F5E3E0;
+    font-family: 'digital-7';
+    color: #3A3238;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    justify-content: space-evenly;
+}
+
+button {
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    font-family: 'digital-7';
+    font-size: 56px;
+    color: #3A3238;
+    background: #E8B4BC;
+    border: 1px solid #3A3238
+}
+
+.zero {
+    width: 180px;
+    margin-right: 27px;
+    border-radius: 50%;
+}
+
+.operator:hover,
+.equals:hover,
+.backspace:hover {
+    background: #3A3238;
+    color: #E8B4BC;
+    transition-duration: 350ms;
+}
+
+.number:hover {
+    background: #6E4555;
+    color: #E8B4BC;
+    transition-duration: 350ms;
+}
+
+.operator:active,
+.number:active,
+.equals:active,
+.backspace:active {
+    background: #F5E3E0;
+    color: #D282A6;
+    transition-duration:90ms;
+    border: 2px solid #6E4555;
+    scale: .8;
+}
+
+.top {
+    height: 50px;
+    width: 490px;
+    padding-top: 20px;
+    text-align: right;
+    font-size: 30px;
+}
+
+.bottom {
+    height: 70px;
+    width: 490px;
+    text-align: right;
+    font-size: 60px;
+}
+
+.errors {
+    font-size: 72px;
+    font-family: 'digital-7';
+    color: #F5E3E0;
+}
